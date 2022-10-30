@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+<main class="messagePage my-xl">
+    <div class="content-box">
+        <div class="message">
+            {% for message in request.user.profile.messages_set.all %}
+            {{message}}
+            {% endfor %}
+
+
+
+        </div>
+    </div>
+</main>
+
+
+{% endblock %}

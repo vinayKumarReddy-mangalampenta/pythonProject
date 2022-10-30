@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+<main class="formPage my-xl">
+    <div class="content-box">
+        <div class="formWrapper">
+            <!-- <a class="backButton" href="#"><i class="im im-angle-left"></i></a>
+            <br> -->
+
+            <form action="" method="post" class="form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for tag in form%}
+                <!-- <div  class="d-flex align-items-center mb-4">
+                    <span style="width:100px" >{{tag.label}}</span>
+                    <span >{{tag}}</span>
+                 </div> -->
+                <div class="form__field">
+                    <label for="formInput#text">{{tag.label}}: </label>
+                    <!-- <input class="input input--text" id="formInput#text" type="text" name="text"
+                        placeholder="Enter text" /> -->
+                    {{tag}}
+                </div>
+                {% endfor %}
+                <input type="submit" value="update"  class="btn btn--sub btn--lg"  />
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

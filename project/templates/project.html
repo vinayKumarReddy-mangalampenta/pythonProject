@@ -1,0 +1,116 @@
+{% extends "main.html"%}
+{% block content %}
+
+
+<main class="singleProject my-md">
+    <div class="container">
+        <div class="layout">
+            <div class="column column--1of3">
+                <h3 class="singleProject__subtitle">Tools & Stacks</h3>
+                <div class="singleProject__toolStack">
+                    {%for tag in tags%}
+                    <span class="tag tag--pill tag--sub tag--lg">
+                        <small>{{tag}}</small>
+                    </span>
+
+                    {%endfor%}
+
+
+                </div>
+                {% if project.source_code %}
+                <a class="singleProject__liveLink" href="{{project.source_code}}" target="_blank"><i
+                        class="im im-external-link"></i>Source
+                    Code
+                </a>
+                {% endif %}
+                {% if project.demo_link %}
+                <a class="singleProject__liveLink" href="{{project.demo_link}}" target="_blank"><i
+                        class="im im-external-link"></i>preview
+                </a>
+                {% endif %}
+                <div class="layout">
+                    <button style="width: 130px; margin-bottom:10px" class="btn btn--main--outline">upvote </button>
+                </div>
+                <h5 style="margin:10px;" class="project--rating">
+                    {{project.vote_total}} Votes
+                </h5>
+                <div class="layout">
+                    <button style="width: 130px;" class="btn btn--sub--outline">downvote</button>
+                </div>
+                {% if request.user.profile == project.owner %}
+                <div class="singleProject__toolStack">
+                    <a class="tag tag--pill tag--main settings__btn"
+                        href="{% url 'update-project' project.id %}?next={{ request.path | urlencode }}"><i
+                            class="im im-edit"></i>
+                        Edit</a>
+                    <a class="tag tag--pill tag--main settings__btn"
+                        href="{% url 'delete-project' project.id %}?next={{ request.path | urlencode }}"><i
+                            class="im im-x-mark-circle-o"></i>
+                        Delete</a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="column column--2of3">
+                <img class="singleProject__preview" src="/{{project.thumbnail}}" alt="portfolio thumbnail" />
+                <a class="singleProject__developer" href="{% url 'user-profile' project.owner.id %}">By
+                    {{project.owner.name}}</a>
+
+                <h2 class="singleProject__title">{{project.title}}</h2>
+                <h3 class="singleProject__subtitle">About the Project</h3>
+                <div class="singleProject__info">
+                    {{project.description}}
+                </div>
+
+                <div class="comments">
+                    <h3 class="singleProject__subtitle">Feedback</h3>
+                    <h5 class="project--rating">
+                        {{project.vote_ratio}}% Postitive Feedback ({{project.vote_total}} Votes) </h5>
+                    {% if request.user.profile.id in project.reviewers %}
+                    <p>You have already submitted your review for this project</p>
+
+                    {% elif request.user.profile == project.owner %}
+                    <p>You cannot review your project </p>
+
+                    {% elif request.user.is_authenticated %}
+                    <form action="{% url 'project' project.id %}" method="POST" class="form">
+
+                        {% csrf_token %}
+                        {% for field in form %}
+                        <div class="form__field">
+                            <label style="font-size:16px;" for="formInput#text">{{field.label}}</label>
+                            {{field}}
+                        </div>
+                        {% endfor %}
+
+                        <input type="submit" class="btn btn--sub btn--lg" />
+                    </form>
+                    {% else %}
+
+                    <h3>Please <a href="{% url 'login' %}?next={{request.path}}">log in </a> to review project</h3>
+                    {% endif %}
+                    <div class="commentList">
+                        {% for comment in project.review_set.all %}
+                        {% if comment.body %}
+                        <div class="comment">
+                            <a href="{% url 'user-profile' comment.owner.id %}">
+                                <img class="avatar avatar--md" src="/{{comment.owner.profile_img}}" alt="user" />
+                            </a>
+                            <div class="comment__details">
+                                <a href="{% url 'user-profile' comment.owner.id %}"
+                                    class="comment__author">{{comment.owner.name}}</a>
+                                <p class="comment__info">
+                                    {{comment.body}}
+                                </p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+{% endblock content %}

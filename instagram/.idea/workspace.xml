@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b9b8d8a-77e1-49a9-918b-60bf29f62a43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagram/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/0002_tag_project_vote_ratio_project_vote_total_review_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/0003_project_thumbnail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/0004_alter_project_thumbnail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/0005_alter_project_thumbnail.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/abc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/createProject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/templates/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/WhatsApp_Image_2022-10-10_at_8.21.28_PM.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/akka.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/lord_ganesh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/low-performance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/projects/today.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/createUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/todos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/todos/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/todos/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/todos/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todos/todos/wsgi.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GWkwdQ5ksu0kMjU9GTa5rXsGeL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/B PURUS0THAM REDDY/vinay2/pythonProject/.git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b9b8d8a-77e1-49a9-918b-60bf29f62a43" name="Changes" comment="" />
+      <created>1666511967197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666511967197</updated>
+    </task>
+    <servers />
+  </component>
+</project>

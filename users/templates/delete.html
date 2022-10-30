@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% load static %}
+{% block content %}
+<div class="pl-5">
+    <div class="auth">
+        <div class="card">
+            <div class="auth__header text-center">
+                <!-- <a href="/">
+                    <img src="{% static 'images/icon.svg' %}" alt="icon" />
+                </a> -->
+                <h3 style="color:red">Delete</h3>
+
+            </div>
+
+            <form action="" method="POST" class="form auth__form">
+                {% csrf_token %}
+
+                <p>do you want to delete
+                <h5>{{object}}</h5>?</p>
+
+                <div class="auth__actions">
+                    <a href="{{request.GET.next}}" class="btn btn--main--outline" style="text-decoration: none;">go back</a>
+                    <input class="btn btn--sub btn--lg" type="submit" value="confirm" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
