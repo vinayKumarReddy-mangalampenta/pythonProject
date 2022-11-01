@@ -29,11 +29,11 @@ class Project(models.Model):
         reviews = self.review_set.all()
         upVotes = reviews.filter(value="up").count()
         totalVotes = reviews.count()
-
         ratio = (upVotes/totalVotes) * 100
         self.vote_ratio = ratio
         self.vote_total = totalVotes
         self.save()
+        
 
     @property 
     def reviewers(self):
@@ -52,6 +52,7 @@ class Review(models.Model):
     body = models.TextField(null=True, blank=True)
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     value = models.CharField(max_length=200, choices=VOTE_TYPE)
+
 
     def __str__(self):
         return self.value

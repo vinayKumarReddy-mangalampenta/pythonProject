@@ -12,8 +12,9 @@ urlpatterns = [
     path('users/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('users/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('projects/', views.projects, name="projects-api"),
-    path('project/<str:projectId>/', views.project, name="project-api"),
-
+    path('projects/<str:projectId>/', views.project, name="project-api"),
     path('users/', views.users, name="users-api"),
+    path("projects/<str:pk>/vote/",views.voteProject),
+    path('create-tag/',views.createTag)
 
 ]
