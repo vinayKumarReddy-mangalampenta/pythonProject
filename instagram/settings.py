@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-71v8%9dwka!sdr1@@0&rfbq!46)keif-(4u)j54fex$+b0k8yz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vdjango2022.herokuapp.com']
 
 
 # Application definition
@@ -187,3 +187,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+if os.cwd() == 'app/':
+    DEBUG = False
