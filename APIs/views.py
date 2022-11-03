@@ -42,7 +42,7 @@ def voteProject(request, pk):
     review, created = projectObj.review_set.get_or_create(
         owner=request.user.profile)
     review.value = request.data.get('vote')
-    review.save() 
+    review.save()
     projectObj.getVoteCount
 
     return Response({'result': "you have {vote}voted the {project} project successfully".format(vote=request.data.get('vote'), project=projectObj)})
@@ -55,3 +55,9 @@ def createTag(request):
     tagObj.save()
     return Response({'result': "{tagObj} created successfully".format(tagObj=tagObj)})
 
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def createProject(request):
+
+    return Response("Hello world")

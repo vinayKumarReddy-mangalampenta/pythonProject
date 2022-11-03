@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dev-search frontend</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' media='screen' href='index.css'>
+    <link rel='stylesheet' media='screen' href='uikit/styles/uikit.css'>
+</head>
+
+<body>
+    <div class="">
+        <section class="hero-section text-center">
+            <div class="container container--narrow">
+                <div class="hero-section__box">
+                    <h2>Search for <span>Projects</span></h2>
+                </div>
+                <div class="hero-section__search">
+                    <form id="searchForm" class="form" action="" method="GET">
+                        <!-- {% csrf_token %} -->
+                        <div class="form__field">
+                            <label for="formInput#search">Search By Projects </label>
+                            <input class="input input--text" id="formInput#search" value="" type="text"
+                                name="search_query" placeholder="Search by Project Title" />
+                        </div>
+
+                        <input class="btn btn--sub btn--lg" type="submit" value="Search" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="projectsList">
+            <div class="container">
+                <div class="grid grid--three" id="projects">
+
+                   
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>

@@ -15,6 +15,7 @@ urlpatterns = [
     path('projects/<str:projectId>/', views.project, name="project-api"),
     path('users/', views.users, name="users-api"),
     path("projects/<str:pk>/vote/",views.voteProject),
-    path('create-tag/',views.createTag)
+    path('create-tag/',views.createTag),
+    path('create-project/',views.createProject)
 
 ]
